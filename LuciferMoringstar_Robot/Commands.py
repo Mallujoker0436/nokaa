@@ -84,10 +84,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 All movies here 🎖', url="https://t.me/matahdmovie123"
-                                            )
+                        InlineKeyboardButton('🎖 working for 🎖', url=f'https://t.me/matahdmovie123')
                     ]
-                await bot.send_cached_media
+                    ]
+                await bot.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
@@ -331,7 +331,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('working for', url="https://t.me/matahdmovie123"
+            InlineKeyboardButton('working for', url=f'https://t.me/matahdmovie123')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
